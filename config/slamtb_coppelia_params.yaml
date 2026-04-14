@@ -1,0 +1,23 @@
+# Para usar slam_toolbox para hacer SLAM con mi entorno de CoppeliaSim
+slam_toolbox:
+  ros__parameters:
+    # Parámetros de marcos (Frames)
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link  # <--- CAMBIA ESTO (estaba en base_footprint)
+    scan_topic: /scan
+    use_sim_time: true
+
+    # Otros parámetros importantes para simulación
+    mode: mapping
+    debug_logging: false
+    throttle_scans: 1
+    transform_publish_period: 0.02
+    map_update_interval: 5.0
+    resolution: 0.05
+    max_laser_range: 20.0
+    minimum_time_interval: 0.5
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+    stack_size_to_use: 40000000
+    enable_interactive_mode: true

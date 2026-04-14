@@ -1,0 +1,10 @@
+# Para usar Beluga para hacer localizacion con el ROS Bag de MIT Stata Center
+amcl:
+  ros__parameters:
+    use_sim_time: true
+    base_frame_id: base_footprint 
+    odom_frame_id: odom_combined
+    global_frame_id: map
+    scan_topic: /base_scan 
+    first_map_only: false
+

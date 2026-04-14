@@ -1,0 +1,15 @@
+# Para usar slam_toolbox para hacer SLAM con el ROS Bag de MIT Stata Center
+slam_toolbox:
+  ros__parameters:
+    odom_frame: odom_combined
+    map_frame: map
+    base_frame: base_footprint 
+    scan_topic: /base_scan     
+    use_sim_time: true
+    mode: mapping
+    max_laser_range: 25.0 #60.0
+    minimum_travel_distance: 0.1
+    minimum_travel_heading: 0.1
+    #do_loop_closing: true # Agregue esto para probar
+    #use_scan_matching: true # Agregue esto para probar
+    #min_laser_range: 0.023
